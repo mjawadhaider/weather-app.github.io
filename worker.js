@@ -35,7 +35,7 @@ async function fetchData() {
         const queryParam = 'Lahore'
         const daysParam = 14
 
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${queryParam}&days=${daysParam}`)
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${queryParam}&days=${daysParam}`)
         response = await response.json()
         return response
     } catch (error) {
